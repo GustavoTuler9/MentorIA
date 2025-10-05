@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorIA - Seu Mentor Digital de Estudos</title>
+    <link rel="stylesheet" href="./src/script.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header id="cab">
+        <div class="container">
+            <a href="./index.html">
+                <img src="./src/img/Logo.png" id="logo" alt="MentorIA">
+            </a>
+            <div id="sociais">
+                <fieldset id="icone-menu">
+                    <a href="https://www.instagram.com/oficial.mentoria?igsh=cWVmenBxeDRnZ29v" target="_blank">
+                        <img src="./src/img/Insta.png" alt="Instagram">
+                    </a>
+                    <div class="switch__container">
+    <input id="switch-shadow" class="switch switch--shadow" type="checkbox">
+    <label for="switch-shadow"></label>
+</div>
+
+                </fieldset>
+            </div>
+        </div>
+    </header>
+
+   
+    <nav id="menu">
+        <ul>
+            <li><a href="./index.html">Sobre Nós</a></li>
+            <li><a href="./pacotes.html">Pacotes</a></li>
+            <li><a href="./cadastrar.html">Cadastrar</a></li>
+            <li><a href="./classroom.html">Sala de Aula</a></li>
+        </ul>
+    </nav>
+
+   
+    <div class="container">
+        <div class="main-flex">
+            
+            <main class="main-content">
+                <h1>MentorIA – Seu Mentor Digital de Estudos</h1>
+                
+                <p class="hero-text">
+                    O MentorIA é uma plataforma inovadora que une inteligência artificial adaptativa e gamificação para transformar a forma como jovens aprendem.
+                </p>
+                
+                <hr>
+                
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h3>📚 Personalização</h3>
+                        <p>Cada estudante recebe um plano de estudos ajustado ao seu perfil e necessidades.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <h3>🎮 Gamificação</h3>
+                        <p>Desafios, recompensas e o "foguinho" (streaks) tornam o estudo mais motivador.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <h3>🤖 Tutor Virtual IA</h3>
+                        <p>Suporte pedagógico inteligente, disponível a qualquer hora.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <h3>🤝 Colaboração</h3>
+                        <p>Ranking, amigos e versão institucional com mural para escolas e ONGs.</p>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="mission-section">
+                    <h2>Nossa Missão</h2>
+                    <p>
+                        Com planos acessíveis para estudantes, famílias e instituições, o MentorIA promove aprendizado divertido, inclusivo e eficaz.
+                        Nosso objetivo é impactar milhões de jovens no Brasil e no mundo, tornando o estudo uma experiência engajante, acessível e global.
+                    </p>
+                    <p class="cta-text">
+                        <strong>Compre pelo site sem sair de casa, basta cadastrar-se e escolher o plano que melhor se encaixa no seu perfil.</strong>
+                    </p>
+                </div>
+                
+                <div class="benefits-section">
+                    <h2>🔹 Benefícios Principais</h2>
+                    <ul class="benefits-list">
+                        <li>Aprendizado mais rápido e eficiente</li>
+                        <li>Apoio individualizado (mesmo com muitos alunos)</li>
+                        <li>Acesso facilitado a explicações 24/7 (24 horas por dia, 7 dias por semana)</li>
+                        <li>Professores ganham mais tempo para interações humanas, já que a IA cuida da parte repetitiva</li>
+                    </ul>
+                </div>
+                
+                <div class="contact-section">
+                    <h2>Entre em Contato</h2>
+                    <p>
+                        Tire todas suas dúvidas, consulte-nos sobre nossos pacotes. Clique no menu <strong>Cadastrar</strong>, 
+                        estamos prontos para atendê-lo!
+                    </p>
+                    <a href="./cadastrar.html" class="cta-button">Fazer Cadastro</a>
+                </div>
+            </main>
+            
+           
+            <aside class="img-coluna">
+                <img src="./src/img/Promoção1.jpg" alt="Promoção MentorIA" id="img-promo">
+                <img src="./src/img/Funcionamento.jpg" alt="Como Funciona" id="img-promo2">
+            </aside>
+        </div>
+    </div>
+    
+   
+    <footer id="rodape">
+        <div class="container">
+            <p class="letra">Desenvolvedora: Gabriela Tavares</p>
+            <p class="letra">MentorIA &copy; 2025 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+  
+   <script>
+    
+    let darkMode = localStorage.getItem('darkMode') === 'true' || false;
+    const switchInput = document.getElementById('switch-shadow');
+
+    function applyDarkMode() {
+        if (darkMode) {
+            document.body.classList.add('dark-mode');
+            switchInput.checked = true;
+        } else {
+            document.body.classList.remove('dark-mode');
+            switchInput.checked = false;
+        }
+    }
+
+    
+    applyDarkMode();
+
+    
+    switchInput.addEventListener('change', function() {
+        darkMode = this.checked;
+        localStorage.setItem('darkMode', darkMode.toString());
+        applyDarkMode();
+    });
+</script>
+
+</body>
+</html>

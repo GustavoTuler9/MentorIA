@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro MentorIA - Comece sua Jornada</title>
+    <link rel="stylesheet" href="./src/script.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <header id="cab">
+        <div class="container">
+            <a href="./index.html">
+                <img src="./src/img/Logo.png" id="logo" alt="MentorIA">
+            </a>
+            <div id="sociais">
+                <fieldset id="icone-menu">
+                    <a href="https://www.instagram.com/oficial.mentoria?igsh=cWVmenBxeDRnZ29v" target="_blank">
+                        <img src="./src/img/Insta.png" alt="Instagram">
+                    </a>
+                    <button id="btn-darkmode">
+                        <img id="icon-darkmode" src="./src/img/black.png" alt="Alternar modo">
+                    </button>
+                </fieldset>
+            </div>
+        </div>
+    </header>
+
+   
+    <div class="linha-animada"></div>
+
+    
+    <nav id="menu">
+        <ul>
+            <li><a href="./index.html">Sobre Nós</a></li>
+            <li><a href="./pacotes.html">Pacotes</a></li>
+            <li><a href="./cadastrar.html">Cadastrar</a></li>
+            <li><a href="./classroom.html">Sala de Aula</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="container">
+        
+        <fieldset id="form-cad">
+            <legend>Formulário de Cadastro</legend>
+            
+            <form id="meuForm" action="#">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu melhor e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Crie uma senha segura" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmarSenha">Confirmar Senha</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cel">Celular</label>
+                    <input type="tel" id="cel" name="cel" placeholder="(xx) xxxxx-xxxx" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="xxxxx-xxx" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="data">Data de Nascimento</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="escolaridade">Nível de Escolaridade</label>
+                    <select id="escolaridade" name="escolaridade" required>
+                        <option value="">Selecione sua escolaridade</option>
+                        <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+                        <option value="Ensino Fundamental Completo">Ensino Fundamental Completo</option>
+                        <option value="Ensino Médio Incompleto">Ensino Médio Incompleto</option>
+                        <option value="Ensino Médio Completo">Ensino Médio Completo</option>
+                        <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                        <option value="Ensino Superior Completo">Ensino Superior Completo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="plano">Plano Escolhido</label>
+                    <select id="plano" name="plano" required>
+                        <option value="">Selecione seu plano</option>
+                        <option value="Mensal">Mensal - R$ 27,90</option>
+                        <option value="Trimestral">Trimestral - R$ 79,90</option>
+                        <option value="Anual">Anual - R$ 301,90</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" id="Cad">Cadastrar</button>
+                    <button type="button" id="Btnlimpar">Limpar</button>
+                </div>
+            </form>
+        </fieldset>
+
+        
+        <section class="info-section">
+            <h2>Por que se cadastrar no MentorIA?</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>🚀 Acesso Imediato</h3>
+                    <p>Comece a usar a plataforma assim que seu cadastro for confirmado</p>
+                </div>
+                <div class="info-item">
+                    <h3>📊 Perfil Personalizado</h3>
+                    <p>Receba um plano de estudos adaptado às suas necessidades</p>
+                </div>
+                <div class="info-item">
+                    <h3>🎯 Acompanhamento</h3>
+                    <p>Monitore seu progresso e receba feedback em tempo real</p>
+                </div>
+                <div class="info-item">
+                    <h3>💬 Suporte</h3>
+                    <p>Nossa equipe está pronta para ajudar em qualquer dúvida</p>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="cta-section">
+            <h2>Pronto para transformar seus estudos?</h2>
+            <p>Junte-se a milhares de estudantes que já estão usando o MentorIA para alcançar seus objetivos!</p>
+            <a href="./pacotes.html" class="cta-button">Ver Pacotes</a>
+            <a href="./classroom.html" class="cta-button" style="margin-left: 15px;">Acessar Sala de Aula</a>
+        </section>
+    </div>
+
+   
+    <footer id="rodape">
+        <fieldset class="rodape-fieldset">
+            <legend>
+                <img src="./src/img/Logo.png" alt="MentorIA" class="rodape-logo">
+            </legend>
+            <p class="letra">Desenvolvedora: Gabriela Tavares</p>
+            <p class="letra">MentorIA &copy; 2025 - Todos os direitos reservados</p>
+        </fieldset>
+    </footer>
+
+    
+    <script>
+        
+        let darkMode = localStorage.getItem('darkMode') === 'true' || false;
+        const btn = document.getElementById('btn-darkmode');
+        const icon = document.getElementById('icon-darkmode');
+
+        
+        function applyDarkMode() {
+            if (darkMode) {
+                document.body.classList.add('dark-mode');
+                icon.src = "./src/img/white.jpg";
+            } else {
+                document.body.classList.remove('dark-mode');
+                icon.src = "./src/img/black.png";
+            }
+        }
+        applyDarkMode();
+
+        btn.onclick = function() {
+            darkMode = !darkMode;
+            
+            
+            localStorage.setItem('darkMode', darkMode.toString());
+            
+            
+            applyDarkMode();
+        };
+
+       
+        document.getElementById('Btnlimpar').onclick = function() {
+            const form = document.getElementById('meuForm');
+            form.reset();
+        };
+
+        
+        document.getElementById('meuForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+           
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const senha = document.getElementById('senha').value;
+            const confirmarSenha = document.getElementById('confirmarSenha').value;
+            const cel = document.getElementById('cel').value.trim();
+            const cep = document.getElementById('cep').value.trim();
+            const data = document.getElementById('data').value;
+            const escolaridade = document.getElementById('escolaridade').value;
+            const plano = document.getElementById('plano').value;
+
+            if (!nome || !email || !senha || !confirmarSenha || !cel || !cep || !data || !escolaridade || !plano) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+
+         
+            if (senha.length < 6) {
+                alert('A senha deve ter pelo menos 6 caracteres.');
+                return;
+            }
+
+            if (senha !== confirmarSenha) {
+                alert('As senhas não coincidem.');
+                return;
+            }
+
+         
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Por favor, insira um e-mail válido.');
+                return;
+            }
+
+           
+            const cepRegex = /^\d{5}-?\d{3}$/;
+            if (!cepRegex.test(cep)) {
+                alert('Por favor, insira um CEP válido no formato xxxxx-xxx.');
+                return;
+            }
+
+           
+            const novoUsuario = {
+                nome: nome,
+                email: email,
+                password: senha,
+                celular: cel,
+                cep: cep,
+                dataNascimento: data,
+                escolaridade: escolaridade,
+                plano: plano,
+                dataCadastro: new Date().toISOString()
+            };
+
+           
+            const usuarios = JSON.parse(localStorage.getItem('mentoriaUsers') || '[]');
+            
+            
+            if (usuarios.find(u => u.email === email)) {
+                alert('Este e-mail já está cadastrado. Use outro e-mail ou faça login.');
+                return;
+            }
+
+           
+            usuarios.push(novoUsuario);
+            localStorage.setItem('mentoriaUsers', JSON.stringify(usuarios));
+
+            
+            alert('Cadastro realizado com sucesso! Agora você pode fazer login na Sala de Aula.');
+            
+           
+            setTimeout(() => {
+                window.location.href = './classroom.html';
+            }, 1000);
+        });
+
+        
+        document.getElementById('cep').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 5) {
+                value = value.substring(0, 5) + '-' + value.substring(5, 8);
+            }
+            e.target.value = value;
+        });
+
+        
+        document.getElementById('cel').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                value = '(' + value;
+            }
+            if (value.length > 3) {
+                value = value.substring(0, 3) + ') ' + value.substring(3);
+            }
+            if (value.length > 10) {
+                value = value.substring(0, 10) + '-' + value.substring(10, 14);
+            }
+            e.target.value = value;
+        });
+
+        
+        window.addEventListener('load', function() {
+            const isLoggedIn = localStorage.getItem('mentoriaLoggedIn');
+            if (isLoggedIn === 'true') {
+                alert('Você já está logado! Redirecionando para a Sala de Aula...');
+                window.location.href = './classroom.html';
+            }
+        });
+    </script>
+</body>
+</html>
